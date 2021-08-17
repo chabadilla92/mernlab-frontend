@@ -7,7 +7,7 @@ import Form from './Form';
 
 function App() {
 
-const url = "http://localhost:4000";
+const url = "https://mernlab-ca.herokuapp.com";
 const [weed, setWeed] = React.useState([]);
 
 const emptyWeed = {
