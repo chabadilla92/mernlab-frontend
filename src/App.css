@@ -1,38 +1,113 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-image: url("https://t4.ftcdn.net/jpg/03/23/82/09/240_F_323820996_XvqVyHLArJYBaC9fNX6P8WTKJ6vaLtQj.jpg");
+  background-size: cover;
+  height: 250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Rock Salt', cursive;  
+  font-size: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h4 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.strains {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+small {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Add Strain div and button */
+.add {
+  margin: 20px auto;
+  width: 170px;
+}
+
+.strain {
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.strain:hover {
+  background-color: #2DCAE2;
+  cursor: pointer;
+}
+
+.img {
+  height: 120px;
+  width: 120px;
+
+  border-radius: 50%;
+}
+
+/* Name */
+h2 {
+  font-family: 'Rock Salt', cursive;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* Strain */
+h3 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
+  margin-top: 7px;
+}
+
+.edit {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.delete {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.edit:hover {
+  background-color: #2DCAE2;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #2DCAE2;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+main {
+  margin: 40px auto;
+}
+
+.card {
+  margin-top: 40px;
 }

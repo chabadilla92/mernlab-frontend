@@ -4,13 +4,14 @@ const Display = (props) => {
     const {weeds} = props;
 
     const loaded = () => (
-        <div style={{textAlign: "center"}}>
+        <div className="container">
             {weeds.map((weed) => (
-                <article>
-                    <img src={weed.img} />
-                    <h1>{weed.name}</h1>
+                <div className="card">
+                    <img className="img" src={weed.img} />
+                    <h2>{weed.name}</h2>
                     <h3>{weed.strain}</h3>
                     <button
+                        className="edit"
                         onClick={() => {
                         props.selectWeed(weed);
                         props.history.push("/edit");
@@ -19,13 +20,14 @@ const Display = (props) => {
                     Edit
                     </button>
                     <button
+                        className="delete"
                         onClick={() => {
                         props.deleteWeed(weed);
                         }}
                     >
                     Delete
                     </button>
-                </article>
+                </div>
             ))}
         </div>
     );

@@ -70,14 +70,16 @@ const deleteWeed = (weed) => {
 
   return (
     <div className="App">
+      <header>
+      <h1 className="top">Weed Globe Cannibus Club</h1>
+      <small>Quality, consistency, and freshness - guaranteed.</small>
 
-      <h1>Weed Globe Cannibus Club</h1>
-      <small>Where you go, "weed" go</small>
-      <hr />
+      </header>
       
-    <Link to="/create">
-    <button>Add Strain</button>
-    </Link>
+    <h4><span className="strains">STRAINS</span> | DISCOVER - LEARN - EXPLORE</h4>
+
+    <div className="add"><Link to="/create"><button className="strain">Add to Collection</button></Link></div>
+    
       <main>
       <Switch>
       <Route exact path="/" render={(rp) => (<Display {...rp} weeds={weed} selectWeed={selectWeed} deleteWeed={deleteWeed}/>)} />
