@@ -17,18 +17,21 @@ const Form = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <small>Name  </small>
       <input
         type="text"
         name="name"
         value={formData.name}
         onChange={handleChange}
       />
+      <small>Image URL </small>
       <input
         type="text"
         name="img"
         value={formData.img}
         onChange={handleChange}
       />
+      <small>Strain </small>
       <input
         type="text"
         name="strain"

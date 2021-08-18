@@ -70,9 +70,19 @@ const deleteWeed = (weed) => {
 
   return (
     <div className="App">
+      <nav>
+        <ul className="navlist">
+        <Link to="/" >
+         <ul>Home</ul> </Link>
+         <ul>Dispensaries</ul>
+          <ul>Brands</ul>
+          <ul>Products</ul>
+          <ul>Maps</ul>
+        </ul>
+      </nav>
       <header>
       <h1 className="top">Weed Globe Cannibus Club</h1>
-      <small>Quality, consistency, and freshness - guaranteed.</small>
+      <small className="quality">The World's premier Cannibus database</small>
 
       </header>
       
@@ -103,6 +113,9 @@ const deleteWeed = (weed) => {
     )}
   />
       </Switch>
+      <footer>
+        <div className="foot">© Created by Chris Abadilla </div>
+        </footer>
       </main>
 
     </div>

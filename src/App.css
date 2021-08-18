@@ -5,11 +5,15 @@ header {
   background-image: url("https://t4.ftcdn.net/jpg/03/23/82/09/240_F_323820996_XvqVyHLArJYBaC9fNX6P8WTKJ6vaLtQj.jpg");
   background-size: cover;
   height: 250px;
+  border-top: 3px solid #1E3D49;
+  border-bottom: 3px solid #1E3D49;
+
 }
 
 h1 {
   font-family: 'Rock Salt', cursive;  
   font-size: 50px;
+  margin-top: 0;
 }
 
 h4 {
@@ -111,3 +115,64 @@ main {
 .card {
   margin-top: 40px;
 }
+
+input[type="text" i] {
+  margin-right: 15px;
+  font-size: 15px;
+  padding: 9px;
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+
+input[type=submit i] {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: white;
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+
+input[type=submit i]:hover {
+  background-color: #2DCAE2;
+  cursor: pointer;
+
+}
+
+.quality {
+  padding: 15px;
+  background-color: rgb(255, 255, 255, 0.5)
+}
+
+footer {
+  background-color: #1E3D49;
+  margin-top: 50px;
+  height: 200px;
+  position: relative;
+}
+
+.foot {
+  color: white;
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+  font-family: 'Julius Sans One', sans-serif;
+  height: 20px;
+}
+
+.navlist {
+  display: flex;
+  font-family: 'Julius Sans One', sans-serif;
+  justify-content: flex-start;
+  padding-left: 0;
+  
+
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
